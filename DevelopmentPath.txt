@@ -1,0 +1,7 @@
+This document will be updated as goals are met and new goals are added.
+
+
+Goals:
+  1) Setup Production/Development Branches
+  2) Create basic Node.js/Express server
+  3) Build base template for the website
