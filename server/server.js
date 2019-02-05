@@ -26,7 +26,18 @@ if(!isProduction){
 mongoose.connect('mongodb://localhost/danielholley-tech');
 if(!isProduction){
     mongoose.set('debug', true);
+}
 
+//Models
+require('./models/Users');
+
+//Passport
+require('./config/passport');
+
+//Routes
+app.use(require('./routes'));
+
+if(!isProduction){
     app.use((err, req, res) => {
         res.status(err.status || 500);
 
